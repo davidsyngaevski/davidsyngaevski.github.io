@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+  <html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Давид Сынгаевский — CEO & Основатель</title>
+  <meta name="description" content="Давид Сынгаевский — CEO и основатель. Портфолио и проекты, включая WuKey — платформу для аренды недвижимости.">
+  <style>
+    :root{
+      --bg:#0b0c10;
+    --bg-soft:#121319;
+    --card:#16171f;
+    --border:#25262f;
+    --text:#f4f4f6;
+          --text-dim:#9a9ba6;
+    --accent:#6ea8ff;
+    --accent-soft:#1c2b4a;
+    --radius:16px;
+}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+        background:var(--bg);
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px;}
+
+  header{
+        padding:120px 0 80px;
+    border-bottom:1px solid var(--border);
+    background:
+          radial-gradient(circle at 15% 20%, var(--accent-soft), transparent 45%),
+                  var(--bg);
+}
+  .eyebrow{
+        color:var(--accent);
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+  h1{
+        font-size:clamp(36px,6vw,56px);
+    font-weight:700;
+    letter-spacing:-0.02em;
+    margin-bottom:16px;
+}
+  .tagline{
+        font-size:19px;
+    color:var(--text-dim);
+    max-width:560px;
+}
+
+  section{padding:72px 0;}
+  section + section{border-top:1px solid var(--border);}
+
+  h2{
+        font-size:26px;
+    font-weight:700;
+    letter-spacing:-0.01em;
+    margin-bottom:28px;
+}
+
+  .about p{
+        color:var(--text-dim);
+    font-size:17px;
+    max-width:640px;
+    margin-bottom:14px;
+  }
+  .about p:last-child{margin-bottom:0;}
+
+      .project-card{
+        background:var(--card);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:36px;
+}
+  .project-head{
+        display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:16px;
+}
+  .project-name{
+        font-size:24px;
+    font-weight:700;
+    letter-spacing:-0.01em;
+}
+  .project-tag{
+        font-size:13px;
+    color:var(--accent);
+    background:var(--accent-soft);
+    padding:5px 12px;
+    border-radius:999px;
+    font-weight:600;
+    white-space:nowrap;
+}
+  .project-card > p{
+        color:var(--text-dim);
+    font-size:16px;
+    margin-bottom:24px;
+}
+
+  h3{
+        font-size:15px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--text);
+    margin:28px 0 14px;
+}
+  h3:first-of-type{margin-top:0;}
+
+      .steps{
+    list-style:none;
+    counter-reset:step;
+    display:grid;
+    gap:14px;
+  }
+  .steps li{
+        counter-increment:step;
+    display:flex;
+    gap:14px;
+    color:var(--text-dim);
+    font-size:15.5px;
+  }
+  .steps li::before{
+        content:counter(step);
+    flex:none;
+    width:26px;
+    height:26px;
+    border-radius:50%;
+    background:var(--accent-soft);
+    color:var(--accent);
+    font-size:13px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .features{
+        list-style:none;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:10px 20px;
+    }
+  .features li{
+        color:var(--text-dim);
+    font-size:15px;
+    padding-left:20px;
+    position:relative;
+  }
+  .features li::before{
+        content:"";
+    position:absolute;
+    left:0;
+    top:9px;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:var(--accent);
+  }
+
+  .concept{
+    color:var(--text-dim);
+    font-size:15.5px;
+  }
+
+  .coming-soon{
+        border:1px dashed var(--border);
+    border-radius:var(--radius);
+    padding:32px;
+    text-align:center;
+    color:var(--text-dim);
+    font-size:15px;
+    margin-top:20px;
+}
+
+  footer{
+        padding:40px 0 60px;
+    color:var(--text-dim);
+    font-size:13px;
+}
+</style>
+  </head>
+  <body>
+
+    <header>
+      <div class="wrap">
+        <div class="eyebrow">Портфолио</div>
+        <h1>Давид Сынгаевский</h1>
+        <p class="tagline">CEO и основатель WuKey. Предприниматель, 17 лет. Строю digital-продукты — от идеи и бизнес-модели до запуска работающего сервиса.</p>
+      </div>
+    </header>
+
+    <section class="about">
+      <div class="wrap">
+        <h2>Обо мне</h2>
+        <p>Мне 17 лет, я предприниматель, CEO и основатель WuKey. Развиваю digital-продукты — от идеи и бизнес-модели до вывода на рынок. Мне интересно строить сервисы, которые меняют привычный способ решения задачи, а не просто копируют существующие подходы.</p>
+        <p>Ниже — один из моих проектов.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <h2>Проекты</h2>
+
+        <div class="project-card">
+          <div class="project-head">
+            <div class="project-name">WuKey</div>
+            <div class="project-tag">Основатель · В разработке</div>
+          </div>
+          <p>Цифровая платформа для поиска и аренды недвижимости, ориентированная на прямое взаимодействие между арендаторами и владельцами жилья. В отличие от традиционных сервисов объявлений, WuKey строится вокруг заявок арендаторов, а не только публикации объектов недвижимости.</p>
+
+          <h3>Принцип работы</h3>
+          <p class="concept" style="margin-bottom:16px;">WuKey использует модель «арендатор создаёт запрос — владелец предлагает объект»:</p>
+          <ol class="steps">
+            <li>Арендатор создаёт заявку с параметрами необходимого жилья: город, район, бюджет, срок аренды, количество комнат и другие требования.</li>
+            <li>Платформа сопоставляет заявку с доступными предложениями.</li>
+            <li>Владельцы подходящей недвижимости получают возможность откликнуться и предложить своё жильё.</li>
+            <li>Арендатор рассматривает полученные предложения и выбирает наиболее подходящие.</li>
+            <li>Стороны продолжают общение и договариваются об условиях аренды через платформу.</li>
+          </ol>
+
+          <h3>Основные возможности</h3>
+          <ul class="features">
+            <li>Создание заявок на аренду</li>
+            <li>Подбор недвижимости по заданным параметрам</li>
+            <li>Прямые предложения от владельцев</li>
+            <li>Фильтрация по цене, расположению и характеристикам</li>
+            <li>Встроенное взаимодействие арендатор — арендодатель</li>
+            <li>Профили пользователей</li>
+            <li>Система предложений и откликов</li>
+            <li>Развитие в сторону онлайн-бронирования и безопасных сделок</li>
+          </ul>
+
+          <h3>Концепция</h3>
+          <p class="concept">Главная идея WuKey — изменить привычную модель поиска недвижимости. На классических площадках пользователь самостоятельно просматривает большое количество объявлений и связывается с владельцами. WuKey переносит инициативу на другую сторону: арендатор формулирует потребность, а владельцы конкурируют за подходящего арендатора своими предложениями.</p>
+        </div>
+
+        <div class="coming-soon">Следующие проекты — скоро</div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">© 2026 Давид Сынгаевский</div>
+    </footer>
+
+  </body>
+  </html>
+  
